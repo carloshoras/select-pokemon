@@ -14,7 +14,7 @@ selector.addEventListener('click', () => {
          return response.json()
      })
      .then((data) => {
-        infoPokemon.innerHTML =`<div class="infoPokemon"><img src="${data.sprites.back_default}" alt="pokemon"/><p><span>Nombre:</span> ${data.name}</p><p><span>Tipo:</span> ${data.types[0].type.name}</p><p><span>Peso:</span> ${data.weight}</p><p><span>Altura:</span> ${data.height}</p></div>`
+        infoPokemon.innerHTML =`<div class="infoPokemon"><img src="${data.sprites.front_default}" alt="pokemon"/><p><span>Nombre:</span> ${data.name}</p><p><span>Tipo:</span> ${data.types[0].type.name}</p><p><span>Peso:</span> ${data.weight}</p><p><span>Altura:</span> ${data.height}</p></div>`
     })
 })
 
